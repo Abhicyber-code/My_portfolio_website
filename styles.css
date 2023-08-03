@@ -25,7 +25,7 @@
 }
 
 .nav-div ul li a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: white;
   text-transform: capitalize;
@@ -152,14 +152,16 @@
 }
 .logo {
   width: 100px;
+  user-select: none;
 }
 
 .logotext {
   font-size: 28px;
-  margin-left: -1.3rem;
+  font-weight: bold;
+  margin-left: -1.7rem;
+  color: black;
 }
 .logocontainer {
-  user-select: none;
   display: flex;
   align-items: center;
   margin-right: 15rem;
@@ -350,13 +352,13 @@ a {
 .btn-pink {
   width: 100px;
   font-family: inherit;
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 500;
   color: white;
   background-color: rgb(240, 85, 85);
   border: solid 3px transparent;
-  padding: 1rem 1.5rem;
-  box-shadow: 5px 5px 7px 0px #0000003f;
+  padding: 1.5rem 1.6rem;
+  box-shadow: 8px 8px 9px 0px #0000003f;
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
@@ -367,7 +369,7 @@ a {
   justify-content: center;
   transition: all 0.5s;
   position: relative;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
 }
 
 .btn-pink::before {
@@ -585,7 +587,9 @@ a {
     width: 35px;
   }
   .project-card:hover .project-number {
-    display: none;
+    display: block;
+    font-size: 7rem;
+    margin: 2rem;
   }
   .project-card:hover .project-content {
     scale: 0.55;
@@ -775,8 +779,10 @@ footer {
 .link-wrapper {
   display: flex;
   gap: 1.2rem;
-  margin: 2rem 0 1rem 2rem;
+  width: 100%;
+  margin: 2rem 1rem 1rem 1rem;
 }
+
 .link-wrapper div a {
   text-decoration: none;
   color: white;
@@ -787,8 +793,21 @@ footer {
 }
 .icon-wrapper {
   display: flex;
+  flex-direction: column;
   gap: 1.6rem;
+  text-align: center;
+  align-items: end;
+  width: 120%;
 }
+.icon-wrapper-icons a {
+  margin-right: 0.8rem;
+}
+.icon-wrapper-text {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
 .extrabtn {
   display: none;
 }
@@ -977,6 +996,7 @@ footer {
   .footer-wrapper {
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
   }
   .link-wrapper {
     width: 100%;
@@ -984,18 +1004,23 @@ footer {
     margin: 0 auto;
     justify-content: center;
   }
+  .icon-wrapper {
+    align-items: center;
+  }
   .herosection-left .herosection-heading,
   .herosection-left .herosection-subheading {
     font-size: 40px;
     font-weight: bold;
   }
   .logocontainer img {
-    width: 7rem;
+    width: 8rem;
     height: 7rem;
   }
   .herosection-right {
     margin: 20px;
-    width: 80%;
+    width: 70%;
+    scale: 0.6;
+    margin: 0px auto;
   }
 
   .logotext {
@@ -1007,12 +1032,12 @@ footer {
     display: none;
   }
   .herosection {
-    padding-bottom: 0rem;
+    padding: 0rem;
     margin: 2.5rem 0;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 300px;
     padding: 22px;
-    margin-bottom: 142px;
+    margin-bottom: 100px;
   }
   .herosection-description {
     font-size: 18px;
@@ -1025,11 +1050,6 @@ footer {
   .herosection-left .herosection-subheading {
     font-size: 25px;
     font-weight: bold;
-  }
-  .herosection-right {
-    scale: 0.6;
-    width: 100%;
-    margin: 0px auto;
   }
 }
 
@@ -1129,7 +1149,11 @@ footer {
   .project-card:nth-child(n) .project-content {
     left: 7%;
   }
-
+  .project-card:hover .project-number {
+    display: block;
+    font-size: 4rem;
+    margin: 2rem;
+  }
   .skills-container {
     padding: 30px;
   }
