@@ -42,8 +42,7 @@
   top: 0;
   bottom: 0;
   right: 0;
-  color: white;
-  background: #4e45d595;
+  background: #00000095;
   padding: 10rem 0;
   z-index: 990;
   display: block;
@@ -52,7 +51,7 @@
   -moz-transform-origin: right;
   -webkit-transform-origin: right;
   transform: translateX(100%);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(8px);
 }
 
 .mobile-nav ul {
@@ -114,7 +113,7 @@
   display: block;
   width: 100%;
   height: 3px;
-  background: red;
+  background: rgb(240, 85, 85);
   position: relative;
   border-radius: 4px;
   transition: all 0.4s ease;
@@ -427,7 +426,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1f1f1f9a;
+  background-color: #000000be;
   transform: scaleX(1);
   z-index: 0;
 }
@@ -526,14 +525,14 @@ a {
 #project1 {
   display: flex;
   flex-direction: column;
-  background-image: url(./images/projects/password-generator.jpg);
+  background-image: url(./images/projects/project1.png);
 }
 #project2 {
   margin-left: 120px;
-  background-image: url(./images/projects/counter-app.jpg);
+  background-image: url(./images/projects/project2.png);
 }
 #project3 {
-  background-image: url(./images/projects/tic-tac-toe.png);
+  background-image: url(./images/projects/password-generator.jpg);
 }
 #project4 {
   margin-left: 120px;
@@ -680,6 +679,7 @@ a {
   margin-top: 1rem;
   width: 85%;
   text-align: justify;
+  font-weight: bold;
 }
 .skill-subheading p {
   margin: 15px 0;
@@ -972,7 +972,12 @@ footer {
   .project-card .btn-project {
     padding: 2rem 2rem;
   }
-
+  #project2 {
+    margin: 0 auto;
+  }
+  #project4 {
+    margin: 0 auto;
+  }
   .skills-container {
     flex-direction: column;
     margin-bottom: 100px;
@@ -1116,7 +1121,11 @@ footer {
   .contactus-subheading {
     font-size: 1rem;
   }
-
+  .project-content {
+    margin: 0 auto;
+    margin-top: 18%;
+    padding: 0;
+  }
   .project-container .project-card {
     height: 25rem;
     width: 100%;
